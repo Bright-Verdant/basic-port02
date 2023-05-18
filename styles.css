@@ -10,22 +10,7 @@ body {
     padding: 20px;
   }
   
-  
-  section {
-    padding: 20px;
-  }
-  
-  .app-gallery img {
-    width: 200px;
-    height: auto;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .app-gallery img.featured {
-    width: 300px;
-  }
-  
+
   @media (max-width: 768px) {
     .app-gallery img {
       width: 100%;
@@ -33,10 +18,32 @@ body {
     }
   }
 
-  /* work page green */
-  body.work-page {
-    background-color: #00ff00;
-  }
+ 
+  /* Work Section Styles */
+section#work {
+  padding: 20px;
+}
+
+.app-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-gallery img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-gallery img:hover {
+  transform: scale(1.2);
+}
+
+.app-gallery img.featured {
+  width: 300px;
+}
 
 
 
@@ -62,3 +69,75 @@ body {
     background-color: #555;
   }
   
+/* profile */
+  section#about img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  
+
+
+/* home page sections and scroll nav */
+.scroll-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+}
+
+.scroll-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.scroll-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.scroll-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.section-divider {
+  margin: 50px auto;
+  width: 100px;
+  height: 3px;
+  background-color: #333;
+}
+
+section:not(:last-child) {
+  margin-bottom: 100px;
+}
