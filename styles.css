@@ -10,22 +10,6 @@ body {
     padding: 20px;
   }
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #333;
-    text-decoration: none;
-    padding: 5px;
-  }
   
   section {
     padding: 20px;
@@ -47,5 +31,34 @@ body {
       width: 100%;
       margin-right: 0;
     }
+  }
+
+  /* work page green */
+  body.work-page {
+    background-color: #00ff00;
+  }
+
+
+
+
+  /* nav bar */
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .menu-item a:hover {
+    background-color: #555;
   }
   
